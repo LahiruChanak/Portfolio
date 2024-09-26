@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-bar">
+          <div class="nav-links">
+            <li class="logo">LK</li>
+            <li><a href="#home"> Home </a></li>
+            <li><a href="#about"> About </a></li>
+            <li><a href="#projects"> Projects </a></li>
+            <li><a href="#skills"> Skills </a></li>
+            <li><a href="#experience"> Experience </a></li>
+            <li><a href="#contact"> Contact </a></li>
+          </div>
+
+          <li>
+            <input type="checkbox" id="theme" />
+            <div class="theme-switch">
+              <label for="theme"></label>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="info-container">
+          <p>
+            <span id="my-name"> Hi, I' m </span>
+            <br />
+            <span id="description">
+              Software engineering student at IJSE. I enjoy bringing new ideas
+              to life with technology. Check out my projects to see how I turn
+              ideas into useful digital tools.
+            </span>
+          </p>
+
+          <img src="/assets/images/my-image.jpg" alt="my image" />
+        </div>
+
+        <div class="sub-container">
+          <a href="#contact" id="contact-me">Contact Me</a>
+          <a href="" id="download-cv">Download CV</a>
+
+          <a href="">
+            <img
+              src="/assets/icons/github.svg"
+              alt="github icon"
+              title="github"
+            />
+          </a>
+
+          <a href="">
+            <img
+              src="/assets/icons/linkedin.svg"
+              alt="linkedin icon"
+              title="linkedin"
+            />
+          </a>
+
+          <a href="">
+            <img
+              src="/assets/icons/facebook.svg"
+              alt="facebook icon"
+              title="facebook"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section id="about">
+        <p class="title">About Me</p>
+
+        <p class="about-content">
+          Hey there, I' m a undergraduate software engineer in IJSE. A motivated
+          and excited student at IJSE studying.
+          <br /><br />Ready to learn new technologies and always interested in
+          inventing fresh ideas that could advance current technology. A relaxed
+          person with a cheerful outlook and strong collaborative skills.
+          <br /><br />
+          Would you like to work together or just chat? Feel free to reach out
+          to me.
+        </p>
+      </section>
+
+      <section id="projects">
+        <p class="title">My Projects</p>
+
+        <div class="project-container">
+          <div class="project-card">
+            <p>
+              <span> FitLife IFMS-Layered Architecture </span> FitLife IFMS is
+              designed to meet the diverse needs of fitness centres, providing a
+              seamless and efficient management experience. Its robust layered
+              architecture ensures adaptability and scalability to grow with the
+              evolving demands of the fitness industry.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <p>
+              <span> FitLife IFMS-MVC Architecture </span> FitLife IFMS is
+              tailored to meet the varied needs of fitness centres, offering a
+              seamless and efficient management experience. The robust MVC
+              architecture provides the flexibility and scalability necessary to
+              adapt and grow with the evolving demands of the fitness industry.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <p>
+              <span> Connect four Game </span> Connect Four is a two-player
+              strategy game where players take turns dropping coloured discs
+              into a vertical grid. The objective is to be the first to form a
+              horizontal, vertical, or diagonal line of four discs. Simple to
+              learn yet challenging to master, Connect Four is a fun and
+              engaging game that tests players' skills.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <p>
+              <span> Stock Management System </span> The Stock Management System
+              is a terminal-based application designed to efficiently manage
+              inventory & suppliers for businesses. It tracks stock levels,
+              monitors incoming and outgoing goods, supplier information and
+              performance. With its user-friendly interface.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <p class="title">My Skills</p>
+
+        <div class="skill-container">
+          <div class="skill-card">
+            <p>Programming Languages</p>
+
+            <div>
+              <img src="/assets/icons/java.png" alt="Java icon" title="Java" />
+              <img
+                src="/assets/icons/python.png"
+                alt="Python icon"
+                title="Python"
+              />
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <p>Web Development Technologies</p>
+
+            <div>
+              <img src="/assets/icons/html.png" alt="HTML icon" title="HTML" />
+              <img src="/assets/icons/css.png" alt="CSS icon" title="CSS" />
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <p>Database</p>
+            <div>
+              <img
+                src="/assets/icons/mysql.png"
+                alt="MySQL icon"
+                title="MySQL"
+              />
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <p>Version Control</p>
+
+            <div>
+              <img
+                src="/assets/icons/github.png"
+                alt="GitHub icon"
+                title="GitHub"
+              />
+              <img src="/assets/icons/git.png" alt="Git icon" title="Git" />
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <p>Tools</p>
+
+            <div>
+              <img
+                src="/assets/icons/figma.png"
+                alt="Figma icon"
+                title="Figma"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <p class="title">My Experience</p>
+
+        <!-- <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <span class="year">2023 - Present</span>
+              <h2>Graduate Diploma</h2>
+              <p>Institute of Software Engineering - IJSE</p>
+            </div>
+            <img src="/assets/images/IJSE_logo.jpg" alt="IJSE logo" />
+          </div>
+
+          <div class="container right">
+            <div class="content">
+              <span class="year">2018 - 2021</span>
+              <h2>G.C.E A/L Examination</h2>
+              <p>G/ All Saints' College</p>
+            </div>
+            <img src="/assets/images/school_logo.jpg" alt="School logo" />
+          </div>
+
+          <div class="container left">
+            <div class="content">
+              <span class="year">2013 - 2018</span>
+              <h2>G.C.E O/L Examination</h2>
+              <p>G/ All Saints' College</p>
+            </div>
+            <img src="/assets/images/school_logo.jpg" alt="School logo" />
+          </div>
+        </div> -->
+
+        <div class="experience-container">
+          <div class="vertical-line"></div>
+
+          <div class="experience-sub-container">
+            <div class="experience-content">
+              <p class="timeline" id="timeline-right-1">2023 - Present</p>
+
+              <img src="/assets/images/IJSE_logo.jpg" alt="IJSE logo" />
+
+              <div class="experience-card">
+                <p>
+                  <span> Graduate Diploma </span>
+                  Institute of Software Engineering - IJSE
+                </p>
+              </div>
+            </div>
+
+            <div class="experience-content">
+              <div class="experience-card">
+                <p>
+                  <span> G.C.E A/L Examination </span>
+                  G/ All Saints' College
+                </p>
+              </div>
+
+              <img src="/assets/images/school_logo.jpg" alt="School logo" />
+
+              <p class="timeline">2018 - 2021</p>
+            </div>
+
+            <div class="experience-content">
+              <p class="timeline" id="timeline-right-02">2013 - 2018</p>
+
+              <img src="/assets/images/school_logo.jpg" alt="School logo" />
+
+              <div class="experience-card">
+                <p>
+                  <span> G.C.E O/L Examination </span>
+                  G/ All Saints' College
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <p class="title">Contact Me</p>
+
+        <div class="contact-container">
+          <p>
+            Please contact me directly at kodikaragelahiru@gmail.com or through
+            this form
+          </p>
+
+          <form>
+            <div class="input-container">
+              <input type="text" id="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <div class="btn-container">
+              <button type="submit">
+                Submit
+                <img src="/assets/icons/send.png" alt="send icon" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Lahiru Kodikara. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
