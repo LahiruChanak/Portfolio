@@ -5,136 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
+    <link rel="icon" href="/assets/icons/logo.svg" />
+
     <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <nav>
-        <ul class="nav-bar">
-          <div class="nav-links">
-            <li class="logo">LK</li>
-            <li><a href="#home"> Home </a></li>
-            <li><a href="#about"> About </a></li>
-            <li><a href="#projects"> Projects </a></li>
-            <li><a href="#skills"> Skills </a></li>
-            <li><a href="#experience"> Experience </a></li>
-            <li><a href="#contact"> Contact </a></li>
-          </div>
+      <div class="logo">LK</div>
 
-          <li>
-            <input type="checkbox" id="theme" />
-            <div class="theme-switch">
-              <label for="theme"></label>
-            </div>
-          </li>
+      <nav>
+        <ul>
+          <li><a href="#home"> Home </a></li>
+          <li><a href="#about"> About </a></li>
+          <li><a href="#projects"> Projects </a></li>
+          <li><a href="#skills"> Skills </a></li>
+          <li><a href="#experience"> Experience </a></li>
+          <li><a href="#contact"> Contact </a></li>
         </ul>
       </nav>
+
+      <div>
+        <input type="checkbox" name="theme" id="theme" />
+        <label for="theme">
+          <i class="fa-solid fa-sun fa-xl" style="color: #fff"></i>
+        </label>
+      </div>
     </header>
 
     <main>
       <section id="home">
-        <div class="info-container">
-          <p>
-            <span id="my-name"> Hi, I' m </span>
-            <br />
-            <span id="description">
-              Software engineering student at IJSE. I enjoy bringing new ideas
-              to life with technology. Check out my projects to see how I turn
-              ideas into useful digital tools.
-            </span>
-          </p>
+        <div class="home-container">
+          <div class="info-container">
+            <p>
+              <span id="my-name"> Hi, I' m </span>
+              <span id="description">
+                Software engineering student at IJSE. I enjoy bringing new ideas
+                to life with technology. Check out my projects to see how I turn
+                ideas into useful digital tools.
+              </span>
+            </p>
 
-          <img src="/assets/images/my-image.jpg" alt="my image" />
-        </div>
+            <div class="info-sub-container">
+              <a href="#contact" id="contact-me">Contact Me</a>
 
-        <div class="sub-container">
-          <a href="#contact" id="contact-me">Contact Me</a>
-          <a href="" id="download-cv">Download CV</a>
+              <a href="/assets/files/cv.pdf" id="download-cv"> Download CV </a>
 
-          <a href="">
+              <div class="social-icons">
+                <a href="https://github.com/LahiruChanak">
+                  <i class="fa-brands fa-github fa-2xl" title="github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/lahiru-kodikara-3463b626a">
+                  <i class="fa-brands fa-linkedin fa-2xl" title="linkedin"></i>
+                </a>
+
+                <a href="https://facebook.com">
+                  <i class="fa-brands fa-facebook fa-2xl" title="facebook"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div>
             <img
-              src="/assets/icons/github.svg"
-              alt="github icon"
-              title="github"
+              src="/assets/images/my-image.jpg"
+              alt="my image"
+              id="my-image"
             />
-          </a>
-
-          <a href="">
-            <img
-              src="/assets/icons/linkedin.svg"
-              alt="linkedin icon"
-              title="linkedin"
-            />
-          </a>
-
-          <a href="">
-            <img
-              src="/assets/icons/facebook.svg"
-              alt="facebook icon"
-              title="facebook"
-            />
-          </a>
+          </div>
         </div>
       </section>
 
       <section id="about">
         <p class="title">About Me</p>
 
-        <p class="about-content">
-          Hey there, I' m a undergraduate software engineer in IJSE. A motivated
-          and excited student at IJSE studying.
-          <br /><br />Ready to learn new technologies and always interested in
-          inventing fresh ideas that could advance current technology. A relaxed
-          person with a cheerful outlook and strong collaborative skills.
-          <br /><br />
-          Would you like to work together or just chat? Feel free to reach out
-          to me.
-        </p>
+        <div class="about-container">
+          <div>
+            <img
+              src="/assets/images/my-image.jpg"
+              alt="my image"
+              id="about-image"
+            />
+          </div>
+
+          <p class="about-content">
+            Hey there, I' m a undergraduate software engineer in IJSE. A
+            motivated and excited student at IJSE studying.
+            <br /><br />
+            Ready to learn new technologies and always interested in inventing
+            fresh ideas that could advance current technology. A relaxed person
+            with a cheerful outlook and strong collaborative skills.
+            <br /><br />
+            Would you like to work together or just chat? Feel free to reach out
+            to me.
+          </p>
+        </div>
       </section>
 
       <section id="projects">
         <p class="title">My Projects</p>
 
         <div class="project-container">
-          <div class="project-card">
-            <p>
-              <span> FitLife IFMS-Layered Architecture </span> FitLife IFMS is
-              designed to meet the diverse needs of fitness centres, providing a
-              seamless and efficient management experience. Its robust layered
-              architecture ensures adaptability and scalability to grow with the
-              evolving demands of the fitness industry.
-            </p>
-          </div>
-
-          <div class="project-card">
-            <p>
-              <span> FitLife IFMS-MVC Architecture </span> FitLife IFMS is
-              tailored to meet the varied needs of fitness centres, offering a
-              seamless and efficient management experience. The robust MVC
-              architecture provides the flexibility and scalability necessary to
-              adapt and grow with the evolving demands of the fitness industry.
-            </p>
-          </div>
-
-          <div class="project-card">
-            <p>
-              <span> Connect four Game </span> Connect Four is a two-player
-              strategy game where players take turns dropping coloured discs
-              into a vertical grid. The objective is to be the first to form a
-              horizontal, vertical, or diagonal line of four discs. Simple to
-              learn yet challenging to master, Connect Four is a fun and
-              engaging game that tests players' skills.
-            </p>
-          </div>
-
-          <div class="project-card">
-            <p>
-              <span> Stock Management System </span> The Stock Management System
-              is a terminal-based application designed to efficiently manage
-              inventory & suppliers for businesses. It tracks stock levels,
-              monitors incoming and outgoing goods, supplier information and
-              performance. With its user-friendly interface.
-            </p>
+          <div class="project-card" id="project-1">
+            <img src="/assets/images/Screenshot 2024-10-15 123302.png" alt="" />
           </div>
         </div>
       </section>
@@ -142,63 +120,106 @@
       <section id="skills">
         <p class="title">My Skills</p>
 
+        <p class="title-text">
+          Discover the languages & tools I am skilled in. I have experience with
+          exceptional, high-performing websites & applications.
+        </p>
+
         <div class="skill-container">
           <div class="skill-card">
-            <p>Programming Languages</p>
-
-            <div>
-              <img src="/assets/icons/java.png" alt="Java icon" title="Java" />
-              <img
-                src="/assets/icons/python.png"
-                alt="Python icon"
-                title="Python"
-              />
-            </div>
+            <img
+              src="/assets/icons/java.png"
+              alt="Java icon"
+              class="skills-image"
+            />
+            <p>
+              <span>Java</span>
+              Programming Language
+            </p>
           </div>
 
           <div class="skill-card">
-            <p>Web Development Technologies</p>
-
-            <div>
-              <img src="/assets/icons/html.png" alt="HTML icon" title="HTML" />
-              <img src="/assets/icons/css.png" alt="CSS icon" title="CSS" />
-            </div>
+            <img
+              src="/assets/icons/python.png"
+              alt="Python icon"
+              class="skills-image"
+            />
+            <p>
+              <span>Python</span>
+              Programming Language
+            </p>
           </div>
 
           <div class="skill-card">
-            <p>Database</p>
-            <div>
-              <img
-                src="/assets/icons/mysql.png"
-                alt="MySQL icon"
-                title="MySQL"
-              />
-            </div>
+            <img
+              src="/assets/icons/html.png"
+              alt="HTML icon"
+              class="skills-image"
+            />
+            <p>
+              <span>HTML</span>
+              Web Development Technology
+            </p>
           </div>
 
           <div class="skill-card">
-            <p>Version Control</p>
-
-            <div>
-              <img
-                src="/assets/icons/github.png"
-                alt="GitHub icon"
-                title="GitHub"
-              />
-              <img src="/assets/icons/git.png" alt="Git icon" title="Git" />
-            </div>
+            <img
+              src="/assets/icons/css.png"
+              alt="CSS icon"
+              class="skills-image"
+            />
+            <p>
+              <span>CSS</span>
+              Web Development Technology
+            </p>
           </div>
 
           <div class="skill-card">
-            <p>Tools</p>
+            <img
+              src="/assets/icons/mysql.png"
+              alt="MySQL icon"
+              class="skills-image"
+            />
+            <p>
+              <span>MySQL</span>
+              Database
+            </p>
+          </div>
 
-            <div>
-              <img
-                src="/assets/icons/figma.png"
-                alt="Figma icon"
-                title="Figma"
-              />
-            </div>
+          <div class="skill-card">
+            <img
+              src="/assets/icons/github.png"
+              alt="Github icon"
+              class="skills-image"
+            />
+            <p>
+              <span>Github</span>
+              Version Control
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <img
+              src="/assets/icons/git.png"
+              alt="Git icon"
+              class="skills-image"
+            />
+            <p>
+              <span>Git</span>
+              Version Control
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <img
+              src="/assets/icons/figma.png"
+              alt="Figma icon"
+              class="skills-image"
+            />
+            <p>
+              <span>Figma</span>
+              Design Tool
+            </p>
           </div>
         </div>
       </section>
@@ -282,36 +303,48 @@
       </section>
 
       <section id="contact">
-        <p class="title">Contact Me</p>
-
         <div class="contact-container">
-          <p>
-            Please contact me directly at kodikaragelahiru@gmail.com or through
-            this form
-          </p>
+          <div class="contact-info">
+            <p>
+              Reach out today to discuss your project needs and start
+              collaborating on something amazing!
+            </p>
+
+            <div class="contact-icons">
+              <a href="https://github.com/LahiruChanak">
+                <i class="fa-brands fa-github" title="Github"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/in/lahiru-kodikara-3463b626a">
+                <i class="fa-brands fa-linkedin" title="Linkedin"></i>
+              </a>
+
+              <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook" title="Facebook"></i>
+              </a>
+
+              <a href="https://x.com/">
+                <i class="fa-brands fa-x-twitter" title="Twitter"></i>
+              </a>
+            </div>
+          </div>
 
           <form>
             <div class="input-container">
-              <input type="text" id="name" placeholder="Your Name" required />
-              <input
-                type="email"
-                id="email"
-                placeholder="Your Email"
-                required
-              />
+              <input type="text" id="name" placeholder="Name" required />
+              <input type="email" id="email" placeholder="Email" required />
             </div>
+
             <textarea
               name="message"
               id="message"
-              placeholder="Your Message"
+              placeholder="Message"
               required
             ></textarea>
 
             <div class="btn-container">
-              <button type="submit">
-                Submit
-                <img src="/assets/icons/send.png" alt="send icon" />
-              </button>
+              <input type="button" value="Submit" id="submit" required />
+              <i class="fa-solid fa-paper-plane send-icon"></i>
             </div>
           </form>
         </div>
