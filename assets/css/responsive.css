@@ -1,13 +1,175 @@
 /* ------------------------- Laptop small screen ------------------------- */
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
+  section {
+    margin: 0 8vw 12vh;
+  }
+
+  .home-container {
+    gap: 1rem;
+  }
+
+  .info-container {
+    width: 65%;
+  }
+
+  #my-image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .project-container {
+    gap: 2.5rem;
+  }
 }
 
 /* ------------------------- Tablet screen ------------------------- */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  section {
+    margin: 0 6vw 10vh;
+    padding: 0 1.5rem;
+  }
+
+  .home-container {
+    flex-direction: column-reverse;
+  }
+
+  .info-container {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-sub-container {
+    margin: 0;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .project-container {
+    gap: 2rem;
+  }
+
+  .timeline {
+    margin: 50px auto;
+  }
+
+  .text-box {
+    width: 220px;
+  }
+
+  .contact-container {
+    gap: 2rem;
+  }
 }
 
 /* ------------------------- Mobile large screen ------------------------- */
 @media screen and (min-width: 425px) and (max-width: 767px) {
+  .navbar-container {
+    justify-content: space-between;
+    padding-left: 30px;
+  }
+
+  nav {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    width: 30%;
+    min-width: 200px;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 3;
+    transition: right 0.5s ease-in-out;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 60px 20px 20px 0;
+    gap: 50px;
+  }
+
+  .nav-links li {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links li::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 9px;
+    border-color: transparent;
+    transition: border-left-color 0.5s ease-in-out;
+  }
+
+  .nav-links li:hover::before {
+    border-left-color: #ffd273;
+  }
+
+  .nav-links a {
+    margin-left: 20px;
+    font-size: 1rem;
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ nav {
+    right: -7px;
+  }
+
+  .menu-icon,
+  .close-icon {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 4;
+    transition: all 0.5s ease-in-out 0.4s;
+  }
+
+  .overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+    transition: opacity 0.5s ease-in-out 0.2s, visibility 0.5s ease-in-out 0.2s;
+  }
+
+  #menu-toggle:checked ~ .overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #menu-toggle:checked ~ .menu-icon {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .close-icon {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease-in-out;
+  }
+
+  #menu-toggle:checked ~ .close-icon {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* ///////////////////////// */
   .timeline {
     display: flex;
     flex-direction: column;
@@ -53,13 +215,77 @@
 }
 
 /* ------------------------- Mobile medium screen ------------------------- */
-    @media screen and (min-width: 375px) and (max-width: 424px) {
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .title {
+    font-size: 1.4rem;
+  }
+
+  #my-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .skill-card {
+    width: 100%;
+  }
+
+  .contact-container p {
+    width: 100%;
+  }
 }
 
 /* ------------------------- Mobile small screen ------------------------- */
 @media screen and (min-width: 320px) and (max-width: 374px) {
+  .title {
+    font-size: 1.3rem;
+  }
+
+  #my-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .info-container p {
+    font-size: 0.9rem;
+  }
+
+  #my-name {
+    font-size: 1.3rem;
+  }
+
+  .skill-card {
+    width: 100%;
+  }
+
+  .contact-container p {
+    width: 100%;
+  }
 }
 
 /* ------------------------- Mobile extra small screen ------------------------- */
 @media screen and (max-width: 319px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  #my-image {
+    width: 160px;
+    height: 160px;
+  }
+
+  .info-container p {
+    font-size: 0.85rem;
+  }
+
+  #my-name {
+    font-size: 1.2rem;
+  }
+
+  .skill-card {
+    width: 100%;
+  }
+
+  .contact-container p {
+    width: 100%;
+  }
 }
