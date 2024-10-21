@@ -251,32 +251,177 @@ nav > ul > li > a:hover {
 /* ________________________ projects content ________________________ */
 .project-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
-  height: fit-content;
-  margin: 1.5rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 0 0 3.5rem;
 }
 
 .project-card {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  width: 200px;
-  height: 100px;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: 320px;
+  height: 188px;
+  border: 3px solid #333;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #ffd273;
+  border-color: transparent;
+  cursor: pointer;
+  animation: remove-overflow 2s forwards;
+}
+
+.project-card:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
 }
 
 .project-card img {
-  width: 80%;
-  height: 80%;
-  object-fit: cover;
-  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 0.5rem;
 }
 
-#project-1 {
-  background-color: #121212;
+.project-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 260px;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+
+.project-card:hover .project-details {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.project-card:not(:hover) .project-details {
+  animation: remove-data 1s forwards;
+}
+
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+
+.project-title {
+  font-size: 1.1rem;
+  color: #121212;
+  text-align: center;
+  margin: 0;
+}
+
+.project-description {
+  font-size: 0.9rem;
+  color: #222;
+  text-align: center;
+  margin: 0;
+}
+
+.project-label-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.project-label-container img {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #ffd273;
+  border-radius: 0.5rem;
+  background-color: #222;
+  padding: 0.2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-label-container img:hover {
+  background-color: transparent;
+  box-shadow: 0 0 8px #ffd273;
+}
+
+.project-label-container .label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #121212;
+  border: 1px solid #121212;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #ffd273;
+}
+
+.project-btn {
+  width: fit-content;
+  text-align: center;
+  border-radius: 1.25rem;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 550;
+  cursor: pointer;
+  border: 3px solid #ffd273;
+  background-color: #222;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-btn:hover {
+  background-color: transparent;
+  box-shadow: 0 0 8px #ffd273;
+  color: #121212;
 }
 
 /* _______________________ skill content ________________________ */
@@ -377,7 +522,8 @@ nav > ul > li > a:hover {
 
 .text-box:hover + .left-arrow,
 .text-box:hover + .right-arrow {
-  filter: invert(1) drop-shadow(0 0 5px #ffd273);
+  background-color: transparent;
+  /* filter: drop-shadow(0 0 5px #ffd273); */
 }
 
 .left-container {
