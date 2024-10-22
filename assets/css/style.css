@@ -24,6 +24,10 @@ body {
   margin: 0;
 }
 
+header {
+  width: 100%;
+}
+
 main {
   padding-top: 20vh;
   transform-origin: top;
@@ -48,7 +52,7 @@ section {
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0 10vw 15vh;
-  padding: 0 2.5rem;
+  padding: 2vh 4vh;
 
   animation: apper 2s ease-in-out;
   animation-timeline: view();
@@ -106,6 +110,33 @@ nav > ul {
   gap: 1.5rem;
 }
 
+nav {
+  gap: 2rem;
+}
+
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s ease-in-out;
+}
+
+nav a:hover::after {
+  width: 6px;
+  height: 6px;
+  border-color: #ffd273;
+}
+
 nav > ul > li > a {
   color: #ccc;
   font-size: 1.1rem;
@@ -156,8 +187,8 @@ nav > ul > li > a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-  gap: 1.2rem;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
 }
 
 .info-container {
@@ -166,23 +197,28 @@ nav > ul > li > a:hover {
   align-items: flex-start;
   justify-content: center;
   gap: 3rem;
-  width: 70%;
+  width: 80%;
 }
 
-.info-container p {
+.home-text {
   line-height: 1.5rem;
   font-size: 1.1rem;
-  width: fit-content;
+  width: 100%;
 }
 
 #my-name {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
-#my-name::after {
-  content: "Lahiru Kodikara \a\a";
-  white-space: pre;
+#my-name-after {
   color: #ffd273;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+#my-name-after::after {
+  content: "\a\a";
+  white-space: pre;
 }
 
 #my-image {
@@ -197,6 +233,8 @@ nav > ul > li > a:hover {
 .info-sub-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
   margin: 0 3rem 2rem;
 }
@@ -244,6 +282,7 @@ nav > ul > li > a:hover {
   color: #ccc;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+  font-size: 2rem;
 }
 
 .social-icons i:hover {
@@ -256,6 +295,7 @@ nav > ul > li > a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 2rem;
   padding-bottom: 2.2rem;
 }
@@ -279,7 +319,7 @@ nav > ul > li > a:hover {
   justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
-  padding: 0 0 3.5rem;
+  padding: 1rem 0 3.5rem;
 }
 
 .project-card {
@@ -341,8 +381,8 @@ nav > ul > li > a:hover {
   gap: 0.5rem;
   width: 260px;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
   border-radius: 1rem;
   position: absolute;
   bottom: -9rem;
@@ -384,14 +424,14 @@ nav > ul > li > a:hover {
 
 .project-title {
   font-size: 1.1rem;
-  color: #121212;
+  color: #fff;
   text-align: center;
   margin: 0;
 }
 
 .project-description {
   font-size: 0.9rem;
-  color: #222;
+  color: #ccc;
   text-align: center;
   margin: 0;
 }
@@ -400,13 +440,14 @@ nav > ul > li > a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 0.6rem;
 }
 
 .project-label-container img {
   width: 30px;
   height: 30px;
-  border: 3px solid #ffd273;
+  border: 2px solid #ffd273;
   border-radius: 0.5rem;
   background-color: #222;
   padding: 0.2rem;
@@ -418,17 +459,10 @@ nav > ul > li > a:hover {
   box-shadow: 0 0 8px #ffd273;
 }
 
-.project-label-container .label {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #121212;
-  border: 1px solid #121212;
-  border-radius: 0.5rem;
-  padding: 0.2rem 0.5rem;
-  background-color: #ffd273;
-}
-
 .project-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: fit-content;
   text-align: center;
   border-radius: 1.25rem;
@@ -436,7 +470,7 @@ nav > ul > li > a:hover {
   font-size: 0.9rem;
   font-weight: 550;
   cursor: pointer;
-  border: 3px solid #ffd273;
+  border: 2px solid #ffd273;
   background-color: #222;
   color: #fff;
   transition: all 0.5s ease-in-out;
@@ -445,7 +479,7 @@ nav > ul > li > a:hover {
 .project-btn:hover {
   background-color: transparent;
   box-shadow: 0 0 8px #ffd273;
-  color: #121212;
+  color: #ccc;
 }
 
 /* _______________________ skill content ________________________ */
@@ -631,16 +665,19 @@ nav > ul > li > a:hover {
 .contact-container p {
   text-align: center;
   font-size: 1.05rem;
-  width: 300px;
+  width: 350px;
   text-align: left;
   color: #999;
 }
 
-.contact-container p::before {
-  content: "Contact me for collaboration \a\a";
-  white-space: pre;
+.contact-title {
   font-size: 1.5rem;
   color: #ccc;
+}
+
+.contact-title::after {
+  content: "\a\a";
+  white-space: pre;
 }
 
 .contact-info {
@@ -695,7 +732,7 @@ textarea {
   background-color: #fff3da;
   resize: none;
   font-family: "Roboto", sans-serif;
-  border: 3px solid #ccc;
+  border: 2px solid #ccc;
   font-size: 0.9rem;
   height: 25px;
   transition: all 0.5s ease-in-out;
@@ -745,6 +782,7 @@ textarea {
 
 #button:hover .send-icon {
   color: #ffd273;
+  animation: fa-bounce 1s ease-in-out 1;
 }
 
 /* ________________________ footer ________________________ */
@@ -752,5 +790,5 @@ footer {
   text-align: center;
   color: #aaa;
   font-size: 0.9rem;
-  padding: 0.6rem 0;
+  padding: 0.6rem;
 }
