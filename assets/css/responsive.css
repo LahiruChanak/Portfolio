@@ -1,5 +1,5 @@
 /* ------------------------- Laptop small screen ------------------------- */
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
   section {
     margin: 0 8vw 12vh;
   }
@@ -23,49 +23,464 @@
 }
 
 /* ------------------------- Tablet screen ------------------------- */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  section {
-    margin: 0 6vw 10vh;
-    padding: 0 1.5rem;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* home section */
+  .home-container {
+    flex-wrap: nowrap;
+  }
+  .info-container {
+    padding: 1rem 0;
+    gap: 1.5rem;
+    width: 70%;
   }
 
-  .home-container {
-    flex-direction: column-reverse;
+  /* about section */
+  .about-container {
+    padding: 0 0.5rem 1.5rem;
+  }
+  .about-content {
+    width: 62%;
+  }
+
+  /* contact section */
+  .contact-container {
+    justify-content: space-between;
+    gap: 1.5rem;
   }
 
   .info-container {
+    width: 90%;
+  }
+
+  #name,
+  #email {
     width: 100%;
+  }
+
+  form {
+    width: 50%;
+  }
+
+  .contact-info {
+    width: 45%;
     align-items: center;
-    text-align: center;
   }
 
-  .info-sub-container {
-    margin: 0;
-  }
-
-  .about-container {
-    flex-direction: column;
-  }
-
-  .project-container {
-    gap: 2rem;
-  }
-
-  .timeline {
-    margin: 50px auto;
-  }
-
-  .text-box {
-    width: 220px;
-  }
-
-  .contact-container {
-    gap: 2rem;
+  .contact-info p {
+    width: 100%;
   }
 }
 
 /* ------------------------- Mobile large screen ------------------------- */
-@media screen and (min-width: 425px) and (max-width: 767px) {
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  /* home section */
+  .home-container {
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    gap: 0;
+  }
+
+  #my-image {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .info-container {
+    gap: 1rem;
+  }
+
+  .info-sub-container {
+    margin: 0;
+    gap: 1.3rem;
+  }
+
+  /* about section */
+  .about-container {
+    align-items: center;
+    padding: 0;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  /* project section */
+  .project-details {
+    width: 80%;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+
+  .project-label-container img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .project-btn {
+    width: 95%;
+    font-size: 0.9rem;
+  }
+
+  /* contact section */
+  .contact-info {
+    align-items: center;
+  }
+
+  .contact-info p {
+    text-align: center;
+  }
+}
+
+/* ------------------------- Mobile medium screen ------------------------- */
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  /* home section */
+  .home-container {
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    gap: 0;
+  }
+
+  #my-image {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .info-container {
+    gap: 1rem;
+  }
+
+  .info-sub-container {
+    margin: 0;
+    gap: 1.3rem;
+  }
+
+  /* about section */
+  .about-container {
+    align-items: center;
+    padding: 0;
+    gap: 0.5rem;
+  }
+  /* project section */
+  .project-details {
+    width: 80%;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+
+  .project-label-container img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .project-btn {
+    width: 95%;
+    font-size: 0.9rem;
+  }
+
+  /* contact section */
+  .contact-container {
+    padding: 0.5rem 0 1.2rem;
+  }
+
+  .contact-container p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    align-items: center;
+  }
+
+  form {
+    width: 90%;
+    align-items: center;
+  }
+
+  textarea,
+  input[type="text"],
+  input[type="email"] {
+    width: 90%;
+  }
+
+  #button {
+    font-size: 0.9rem;
+    margin: 0 auto;
+  }
+}
+
+/* ------------------------- Mobile small screen ------------------------- */
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  /* home section */
+  .home-container {
+    justify-content: center;
+    padding-bottom: 1.5rem;
+  }
+
+  .home-text {
+    width: 100%;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+
+  #my-image {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .info-container {
+    gap: 1rem;
+  }
+
+  .info-container p {
+    font-size: 0.9rem;
+  }
+
+  .info-sub-container {
+    margin: 0;
+    gap: 1.3rem;
+  }
+
+  .social-icons {
+    margin: 0;
+  }
+
+  #my-name {
+    font-size: 1.3rem;
+  }
+
+  /* about section */
+  .about-container {
+    padding: 0.6rem 0 1rem;
+  }
+  #about-image {
+    width: 100%;
+  }
+
+  .about-content {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  /* project section */
+  .project-details {
+    width: 65%;
+  }
+
+  .project-title {
+    font-size: 1rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  .project-label-container img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .project-btn {
+    width: 92%;
+    font-size: 0.8rem;
+  }
+
+  /* contact section */
+  .contact-container {
+    padding: 0.5rem 0 1.2rem;
+  }
+
+  .contact-container p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  textarea,
+  input[type="text"],
+  input[type="email"] {
+    width: 90%;
+  }
+
+  #button {
+    font-size: 0.9rem;
+    margin: 0 auto;
+  }
+}
+
+/* ------------------------- Mobile extra small screen ------------------------- */
+@media screen and (max-width: 320px) {
+  section {
+    padding: 1vh 3vh;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  /* home section */
+  .home-container {
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+  }
+
+  .info-container p {
+    font-size: 0.95rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .info-sub-container {
+    margin: 0 auto;
+    gap: 1rem;
+  }
+
+  #my-image {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  #my-name {
+    font-size: 1.2rem;
+  }
+
+  #my-name::after {
+    content: "\a";
+    white-space: pre;
+  }
+
+  #my-name-after {
+    margin-left: 0;
+  }
+
+  #contact-me,
+  #download-cv {
+    width: 75%;
+    font-size: 0.8rem;
+  }
+
+  .social-icons {
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .social-icons i {
+    font-size: 1.5rem;
+  }
+
+  /* about section */
+  .about-container {
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+
+  #about-image {
+    width: 100%;
+  }
+
+  .about-content {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  /* project section */
+  .project-details {
+    width: 65%;
+  }
+
+  .project-title {
+    font-size: 1rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  .project-label-container img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .project-btn {
+    width: 92%;
+    font-size: 0.8rem;
+  }
+
+  /* skill section */
+  .skill-card {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .skill-card p {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* contact section */
+  .contact-container {
+    padding: 0.5rem 0 1.2rem;
+  }
+  .contact-info p {
+    font-size: 0.9rem;
+    width: auto;
+    text-align: center;
+  }
+
+  .contact-title {
+    font-size: 1.15rem;
+  }
+
+  .contact-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 2rem);
+    margin: 0 auto;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  textarea,
+  input[type="text"],
+  input[type="email"] {
+    width: 90%;
+  }
+
+  #button {
+    font-size: 0.85rem;
+    margin: 0 auto;
+  }
+}
+
+/* ------------------------- burger menu & timeline ------------------------- */
+@media screen and (max-width: 768px) {
+  main {
+    padding-top: 15vh;
+  }
+
+  section {
+    margin-bottom: 8vh;
+  }
+
   .navbar-container {
     justify-content: space-between;
     padding-left: 30px;
@@ -75,10 +490,13 @@
     position: fixed;
     right: -100%;
     top: 0;
-    height: 100vh;
+    margin: 5px 0;
+    height: calc(100vh - 10px);
     width: 30%;
-    min-width: 200px;
+    min-width: 185px;
     background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    border-radius: 1rem 0 0 1rem;
     z-index: 3;
     transition: right 0.5s ease-in-out;
   }
@@ -169,7 +587,7 @@
     visibility: visible;
   }
 
-  /* ///////////////////////// */
+  /* timeline */
   .timeline {
     display: flex;
     flex-direction: column;
@@ -180,12 +598,17 @@
   }
 
   .timeline::after {
-    left: -22px;
+    left: 28px;
   }
 
   .container {
     width: 100%;
     padding: 0 25px 0 80px;
+    margin: 0 auto;
+  }
+
+  .text-box {
+    width: 60%;
   }
 
   .text-box small {
@@ -214,78 +637,30 @@
   }
 }
 
-/* ------------------------- Mobile medium screen ------------------------- */
-@media screen and (min-width: 375px) and (max-width: 424px) {
-  .title {
-    font-size: 1.4rem;
+@media screen and (max-width: 425px) {
+  .timeline {
+    width: 90%;
   }
 
-  #my-image {
-    width: 200px;
-    height: 200px;
+  .text-box {
+    width: 100% !important;
+    text-align: center;
   }
 
-  .skill-card {
-    width: 100%;
-  }
-
-  .contact-container p {
-    width: 100%;
-  }
-}
-
-/* ------------------------- Mobile small screen ------------------------- */
-@media screen and (min-width: 320px) and (max-width: 374px) {
-  .title {
-    font-size: 1.3rem;
-  }
-
-  #my-image {
-    width: 180px;
-    height: 180px;
-  }
-
-  .info-container p {
-    font-size: 0.9rem;
-  }
-
-  #my-name {
-    font-size: 1.3rem;
-  }
-
-  .skill-card {
-    width: 100%;
-  }
-
-  .contact-container p {
-    width: 100%;
-  }
-}
-
-/* ------------------------- Mobile extra small screen ------------------------- */
-@media screen and (max-width: 319px) {
-  .title {
+  .text-box h2 {
     font-size: 1.2rem;
   }
 
-  #my-image {
-    width: 160px;
-    height: 160px;
+  .right-container,
+  .left-container {
+    padding: 0 !important;
   }
 
-  .info-container p {
-    font-size: 0.85rem;
-  }
-
-  #my-name {
-    font-size: 1.2rem;
-  }
-
-  .skill-card {
-    width: 100%;
-  }
-
-  .contact-container p {
-    width: 100%;
+  .right-arrow,
+  .left-arrow,
+  .timeline::after,
+  .left-container img,
+  .right-container img {
+    display: none;
   }
 }
