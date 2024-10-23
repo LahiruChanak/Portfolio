@@ -58,10 +58,10 @@ section {
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
-
+/* 
 #contact {
   margin-bottom: 6vh;
-}
+} */
 
 @keyframes apper {
   from {
@@ -222,8 +222,10 @@ nav > ul > li > a:hover {
 }
 
 #my-image {
-  width: 250px;
-  height: 250px;
+  width: 50vw;
+  height: 50vw;
+  max-width: 200px;
+  max-height: 200px;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid #ccc;
@@ -307,7 +309,8 @@ nav > ul > li > a:hover {
 }
 
 #about-image {
-  width: 250px;
+  width: 50vw;
+  max-width: 250px;
   border-radius: 0.5rem;
   transform: scaleX(-1);
 }
@@ -580,8 +583,15 @@ nav > ul > li > a:hover {
 
 .text-box:hover + .left-arrow,
 .text-box:hover + .right-arrow {
-  background-color: transparent;
-  /* filter: drop-shadow(0 0 5px #ffd273); */
+  filter: drop-shadow(0 0 5px #ffd273);
+}
+
+.text-box:hover + .left-arrow {
+  border-left-color: #121212;
+}
+
+.text-box:hover + .right-arrow {
+  border-right-color: #121212;
 }
 
 .left-container {
@@ -750,6 +760,7 @@ textarea:focus {
 
 textarea {
   width: 95%;
+  max-width: 385px;
   height: 100px;
 }
 
@@ -789,6 +800,6 @@ textarea {
 footer {
   text-align: center;
   color: #aaa;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 0.6rem;
 }
