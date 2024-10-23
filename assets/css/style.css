@@ -58,10 +58,6 @@ section {
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
-/* 
-#contact {
-  margin-bottom: 6vh;
-} */
 
 @keyframes apper {
   from {
@@ -197,7 +193,7 @@ nav > ul > li > a:hover {
   align-items: flex-start;
   justify-content: center;
   gap: 3rem;
-  width: 80%;
+  width: 77%;
 }
 
 .home-text {
@@ -306,6 +302,7 @@ nav > ul > li > a:hover {
   font-size: 1.1rem;
   line-height: 1.5rem;
   margin: 1.9rem 0;
+  width: 74%;
 }
 
 #about-image {
