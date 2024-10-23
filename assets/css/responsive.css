@@ -1,24 +1,63 @@
 /* ------------------------- Laptop small screen ------------------------- */
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-  section {
-    margin: 0 8vw 12vh;
+  /* home section */
+  .home-container {
+    flex-wrap: nowrap;
+  }
+  .info-container {
+    padding: 1rem 0;
+    gap: 1.5rem;
+    width: 70%;
   }
 
-  .home-container {
-    gap: 1rem;
+  .info-sub-container {
+    margin: 0;
+  }
+
+  /* about section */
+  .about-container {
+    padding-bottom: 1.5rem;
+    gap: 1.5rem;
+  }
+  .about-content {
+    width: 63%;
+    font-size: 0.95rem;
+  }
+
+  #about-image {
+    width: 25vw;
+  }
+
+  /* contact section */
+  .contact-container {
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
+
+  textarea {
+    max-width: none;
+  }
+
+  form {
+    width: 40%;
   }
 
   .info-container {
-    width: 65%;
+    width: 90%;
   }
 
-  #my-image {
-    width: 220px;
-    height: 220px;
+  #name,
+  #email {
+    width: 100%;
   }
 
-  .project-container {
-    gap: 2.5rem;
+  .contact-info {
+    width: 45%;
+    align-items: center;
+  }
+
+  .contact-info p {
+    width: 100%;
   }
 }
 
@@ -36,10 +75,16 @@
 
   /* about section */
   .about-container {
-    padding: 0 0.5rem 1.5rem;
+    padding-bottom: 1.5rem;
+    gap: 1.5rem;
   }
   .about-content {
-    width: 62%;
+    width: 60%;
+    font-size: 0.95rem;
+  }
+
+  #about-image {
+    width: 25vw;
   }
 
   /* contact section */
@@ -78,6 +123,11 @@
     justify-content: center;
     padding-bottom: 1.5rem;
     gap: 0;
+  }
+
+  #my-name,
+  #my-name-after {
+    text-align: center;
   }
 
   #my-image {
@@ -126,12 +176,31 @@
   }
 
   /* contact section */
+  .contact-container {
+    justify-content: center;
+    gap: 2rem;
+  }
   .contact-info {
     align-items: center;
+    width: 100%;
+    padding: 0 4vh;
+    gap: 1rem;
   }
 
   .contact-info p {
     text-align: center;
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+    align-items: center;
+  }
+
+  #name,
+  #email {
+    width: 100%;
+    max-width: 175px;
   }
 }
 
