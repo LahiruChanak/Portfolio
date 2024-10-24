@@ -1,11 +1,11 @@
-const burger = document.getElementById("burger");
+const menuIcon = document.getElementById("menu-icon");
 const menuPanel = document.getElementById("menu-panel-id");
-const closeBtn = document.getElementById("btn-close");
+const closeIcon = document.getElementById("close-icon");
 
-burger.addEventListener("click", () => {
+menuIcon.addEventListener("click", () => {
   menuPanel.classList.toggle("active");
 });
 
-closeBtn.addEventListener("click", () => {
+closeIcon.addEventListener("click", () => {
   menuPanel.classList.remove("active");
 });
