@@ -99,6 +99,13 @@ header {
   width: calc(100% - 10vw);
 }
 
+.nav-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
 nav > ul {
   display: flex;
   align-items: center;
@@ -605,6 +612,7 @@ nav > ul > li > a:hover {
   position: absolute;
   width: 40px;
   border-radius: 50%;
+  border: 2px solid #fff;
   right: -20px;
   top: 50px;
   z-index: 10;
