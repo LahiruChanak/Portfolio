@@ -24,10 +24,6 @@ body {
   margin: 0;
 }
 
-header {
-  width: 100%;
-}
-
 main {
   padding-top: 15vh;
   transform-origin: top;
@@ -89,14 +85,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2vh 5vw;
+  padding: 2vh 0;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
-  width: calc(100% - 10vw);
 }
 
 .nav-options {
@@ -104,6 +99,8 @@ header {
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  margin-right: 5vw;
+  width: fit-content;
 }
 
 nav > ul {
@@ -152,6 +149,7 @@ nav > ul > li > a:hover {
 .logo {
   font-family: "SkateSemiBold";
   font-size: 1.5rem;
+  margin-left: 5vw;
 }
 
 .logo::after {
