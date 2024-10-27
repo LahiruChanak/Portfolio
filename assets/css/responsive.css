@@ -208,6 +208,11 @@
   .input-container {
     width: fit-content;
   }
+
+  /* footer */
+  footer {
+    font-size: 0.95rem;
+  }
 }
 
 /* ------------------------- Mobile medium screen ------------------------- */
@@ -575,7 +580,7 @@
     right: -100%;
     top: 0;
     margin: 2px 0;
-    height: calc(100vh - 10px);
+    height: 120vh;
     width: 30%;
     min-width: 185px;
     background-color: rgba(0, 0, 0, 0.9);
@@ -758,5 +763,10 @@
   .left-container img,
   .right-container img {
     display: none;
+  }
+
+  /* footer */
+  footer {
+    font-size: 0.85rem;
   }
 }
