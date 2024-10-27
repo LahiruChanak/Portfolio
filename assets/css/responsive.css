@@ -195,7 +195,7 @@
   }
 
   form {
-    width: 100%;
+    width: fit-content;
     align-items: center;
   }
 
@@ -203,6 +203,10 @@
   #email {
     width: 100%;
     max-width: 175px;
+  }
+
+  .input-container {
+    width: fit-content;
   }
 }
 
@@ -720,6 +724,11 @@
     rotate: 180deg;
     border-right: 0;
     left: 60px;
+  }
+
+  /* contact page */
+  .txt-input {
+    width: 100%;
   }
 }
 
