@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
+    <link rel="stylesheet" href="/assets/css/theme-toggle.css" />
 
     <link
       rel="stylesheet"
@@ -48,6 +49,11 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+
+        <label for="theme-toggle" class="theme-toggle">
+          <input type="checkbox" id="theme-toggle" />
+          <span class="slider"></span>
+        </label>
       </div>
     </header>
 
@@ -425,16 +431,26 @@
 
           <form>
             <div class="input-container">
-              <input type="text" id="name" placeholder="Name" required />
-              <input type="email" id="email" placeholder="Email" required />
+              <div class="txt-input">
+                <input type="text" id="name" placeholder="" required />
+                <label for="name">Name</label>
+              </div>
+
+              <div class="txt-input">
+                <input type="email" id="email" placeholder="" required />
+                <label for="email">Email</label>
+              </div>
             </div>
 
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Message"
-              required
-            ></textarea>
+            <div class="txt-input">
+              <textarea
+                name="message"
+                id="message"
+                placeholder=""
+                required
+              ></textarea>
+              <label for="message">Message</label>
+            </div>
 
             <button id="button" type="button" required>
               Submit <i class="fa-solid fa-paper-plane send-icon"></i>
