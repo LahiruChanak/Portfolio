@@ -52,7 +52,7 @@ input:checked + .slider:before {
 /* Light Mode Styles */
 body.light-mode {
   background-color: #f9f9f9;
-  background-image: url("/assets/images/bg-white.png");
+  background-image: url("/assets/images/bg-light.png");
   color: #000;
 }
 
