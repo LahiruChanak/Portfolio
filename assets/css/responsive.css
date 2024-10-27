@@ -403,6 +403,10 @@
     font-size: 0.9rem;
     margin: 0 auto;
   }
+
+  .contact-info {
+    align-items: center;
+  }
 }
 
 /* ------------------------- Mobile extra small screen ------------------------- */
