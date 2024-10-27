@@ -761,12 +761,6 @@ textarea:focus {
   color: #ccc;
 }
 
-textarea {
-  width: 95%;
-  max-width: 385px;
-  height: 100px;
-}
-
 #button {
   display: flex;
   align-items: center;
@@ -834,7 +828,7 @@ footer {
 
 .txt-input textarea {
   height: auto;
-  min-height: 100px;
+  height: 100px;
   resize: none;
   padding: 10px 15px;
 }
@@ -867,20 +861,3 @@ footer {
   background: #000;
   border-radius: 2px;
 }
-
-/* #name,
-#email,
-textarea {
-  width: 95%;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  background-color: #f5f8fa;
-  font-size: 0.9rem;
-  color: #808080;
-}
-
-textarea {
-  resize: vertical;
-} */
