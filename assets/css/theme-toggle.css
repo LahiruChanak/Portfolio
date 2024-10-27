@@ -68,16 +68,21 @@ body.light-mode a {
   color: #000;
 }
 
+body.light-mode nav a.active {
+  color: #ffd273;
+  font-weight: bold;
+}
+
 body.light-mode a:hover {
-  color: #ffae00;
+  color: #ffd273;
 }
 
 body.light-mode a:hover::after {
-  border-color: #ffb618;
+  border-color: #ffd273;
 }
 
 body.light-mode .nav-links li:hover::before {
-  border-left-color: #ffb618;
+  border-left-color: #ffd273;
 }
 
 body.light-mode .project-card {
@@ -110,7 +115,7 @@ body.light-mode .text-box {
 }
 
 body.light-mode .text-box:hover {
-  filter: drop-shadow(0 0 10px #ffc343);
+  filter: drop-shadow(0 0 10px #ffd273);
   background-color: #f9f9f9;
   color: #121212;
 }
@@ -161,5 +166,5 @@ body.light-mode .txt-input input:not(:placeholder-shown) + label,
 body.light-mode .txt-input textarea:focus + label,
 body.light-mode .txt-input textarea:not(:placeholder-shown) + label {
   background-color: #ecf0f1;
-  color: #ffae00;
+  color: #ffd273;
 }
