@@ -118,6 +118,11 @@ nav a {
   position: relative;
 }
 
+nav a.active {
+  color: #ffd273;
+  font-weight: bold;
+}
+
 nav a::after {
   content: "";
   position: absolute;
